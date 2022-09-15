@@ -2,6 +2,10 @@
 Simple Python3 script that automates patching Steam for SteamDeck UI.
 
 This script will allow you to patch Steam, so it installs the SteamDeck UI.
+
+![Results.](https://github.com/czarro1337/SteamDeckUI-Patcher/blob/main/media.png)
+
+
 Requirements:
 
 - Python3 (duh)
