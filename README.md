@@ -14,7 +14,8 @@ With these installed let's go to the next step.
 # Installation
 
 1. Make sure your Steam is in C:\ drive. You can change the path in the script itself.
-2. Download the script.
+2. Download the script or for beginners the exe file.
+// FOR ADVANCED PEOPLE WHO KNOWS CMD
 3. Open CMD or Windows Terminal.
 4. Enter the command python and drag'n'drop the file to the command prompt.
 5. Hit Enter.
@@ -29,6 +30,18 @@ Note: It doesn't mess with Steam's files, and it's not against Steam's TOS. This
 12. Hit "Apply"
 13. Done!
 14. Run Steam with the Steam Deck UI patched!
+// FOR BEGINNER PEOPLE WITH THE EXE.
+1. It will ask for your confirmation.
+Note: Case sensitive. Please enter UPPERCASE Y or N.
+Note: It doesn't mess with Steam's files, and it's not against Steam's TOS. This is only a file patch.
+2. After confirmation it will taskkill Steam if there is a instance running.
+3. It will create the "beta" file if doesn't exist (duh that's why we are here)
+4. The script will notify you when it's done.
+5. After that go to your Steam's shortcut's properties.
+6. In the "Target" section add -gamepadui with a space between it.
+7. Hit "Apply"
+8. Done!
+9. Run Steam with the Steam Deck UI patched!
 
 # Uninstallation.
 1. Go to your Steam directory.
