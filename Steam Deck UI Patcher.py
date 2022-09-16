@@ -2,6 +2,7 @@ import os
 from os.path import sep
 from pathlib import Path
 from typing import Final
+import time
 
 # TODO: make this not platform sensitive
 # Thanks to flaszlo2000 for code refactoring, code is more readable!
