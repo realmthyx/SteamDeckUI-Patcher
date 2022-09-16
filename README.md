@@ -63,6 +63,23 @@ No, it isn't. It doesn't do anything malicious.
 # Showcase?
 https://youtu.be/ZCx6KMfzkss <- here you go.
 
+# Is it any better than SteamOS?
+
+This is more of like a launcher wrapper, while SteamOS is a Linux distribution I really can't say if it is any better than SteamOS. 
+But it's good for people that prefers playing on controllers without a hassle installing modded SteamOS, definitely try this out!
+But if you REALLY want this Steam Deck experience, search up how to install SteamOS 3.0 on Any PC.
+This will give you a minimal experience of the GUI itself. Treat it like a semi-emulator XD.
+
+# If I go to Power and click Turn Off will it turn off Steam or the entire PC?
+
+Entire PC. You can just click "X" in the window and Steam will close.
+By clicking Turn Off in the Power section will shut down your entire computer, not reccomending it if you have unsaved work.
+
+# Can I make projects using this Patcher?
+
+Most definitely YES! If you can make like a video that you can make a unused gaming PC and want to give it a second life as a console. Yes!
+If you make projects like this or any videos using this patcher you must credit me (czarro1337) and give the link to the GitHub Page.
+
 # Summary.
 
 Thank you for downloading my patcher, it really took like 1 hour to write this script with minor bugs and errors fixed. Hope you will like it!
