@@ -25,8 +25,7 @@ With these installed let's go to the next step.
 4. Enter the command python and drag'n'drop the file to the command prompt.
 5. Hit Enter.
 6. It will ask for your confirmation.
-Note: Case sensitive. Please enter UPPERCASE Y or N.
-Note: It doesn't mess with Steam's files, and it's not against Steam's TOS. This is only a file patch.
+- Note: It doesn't mess with Steam's files, and it's not against Steam's TOS. This is only a file patch.
 7. After confirmation it will taskkill Steam if there is a instance running.
 8. It will create the "beta" file if doesn't exist (duh that's why we are here)
 9. The script will notify you when it's done.
@@ -37,8 +36,7 @@ Note: It doesn't mess with Steam's files, and it's not against Steam's TOS. This
 14. Run Steam with the Steam Deck UI patched!
 # FOR BEGINNER PEOPLE WITH THE EXE.
 1. It will ask for your confirmation.
-Note: Case sensitive. Please enter UPPERCASE Y or N.
-Note: It doesn't mess with Steam's files, and it's not against Steam's TOS. This is only a file patch.
+- Note: It doesn't mess with Steam's files, and it's not against Steam's TOS. This is only a file patch.
 2. After confirmation it will taskkill Steam if there is a instance running.
 3. It will create the "beta" file if doesn't exist (duh that's why we are here)
 4. The script will notify you when it's done.
