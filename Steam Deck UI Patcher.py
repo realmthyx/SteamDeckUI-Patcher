@@ -18,12 +18,14 @@ def steam_patch() -> None:
         beta_file.write("steampal_stable_9a24a2bf68596b860cb6710d9ea307a76c29a04d")
 
     print("Script has applied the patch. Make sure you go to Steam's shortcut properties and on Target add -gamepadui.")
+    time.sleep(3)
 
 def main() -> None:
     # With love from czarro1337/bruhLNV! <3
     print("Checking if Steam directory on C: drive exists.")
     if STEAM_PKG_PATH.is_dir():
         print("Steam directory was found.")
+        time.sleep(0.721534)
         install_confirm = input("By applying this patch you are installing the Steam Deck UI. Are you sure you want to install this? Y/N? >> ")
 
         if install_confirm.upper() == "Y":
@@ -31,9 +33,10 @@ def main() -> None:
 
             print("Checking if the beta file exists: ", end = "")
             if STEAM_BETA_PATH.exists():
-                print("OK")
+                print("File exists.")
+                print("Overwriting.")
             else:
-                print("FAIL")
+                print("File doesn't exist")
                 print("The program will try to create it!")
 
             print("Killing Steam proccess.")
@@ -44,9 +47,8 @@ def main() -> None:
         else:
             print("Exiting.")
     else:
-        print("Steam directory was not found. If you have Steam on any other drive or partition change the location in path variable.")
-
-    exit() # is this necessary on SD?
+        print("Steam directory was not found. Exiting.")
+    exit()
 
 
 if __name__ == "__main__":
