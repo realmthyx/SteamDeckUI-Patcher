@@ -1,4 +1,4 @@
-![Results.](https://github.com/czarro1337/SteamDeckUI-Patcher/blob/main/media2.png)
+![Results.](https://github.com/czarro1337/SteamDeckUI-Patcher/blob/main/obraz.png)
 # <center>SteamDeckUI-Patcher</center>
 Simple Python3 script that automates patching Steam for SteamDeck UI.
 
