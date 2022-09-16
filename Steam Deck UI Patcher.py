@@ -1,8 +1,8 @@
 import os
+import time
 from os.path import sep
 from pathlib import Path
-from typing import Final
-import time
+from typing import Final, NoReturn
 
 # TODO: make this not platform sensitive
 # Thanks to flaszlo2000 for code refactoring, code is more readable!
@@ -21,35 +21,38 @@ def steam_patch() -> None:
     print("Script has applied the patch. Make sure you go to Steam's shortcut properties and on Target add -gamepadui.")
     time.sleep(3)
 
+def terminate(msg: str) -> NoReturn:
+    print(msg)
+    exit()
+
 def main() -> None:
     # With love from czarro1337/bruhLNV! <3
     print("Checking if Steam directory on C: drive exists.")
-    if STEAM_PKG_PATH.is_dir():
-        print("Steam directory was found.")
-        time.sleep(0.721534)
-        install_confirm = input("By applying this patch you are installing the Steam Deck UI. Are you sure you want to install this? Y/N? >> ")
+    if not STEAM_PKG_PATH.is_dir():
+        terminate("Steam directory was not found. Exiting.")
 
-        if install_confirm.upper() == "Y":
-            os.chdir(STEAM_PKG_PATH)
+    print("Steam directory was found.")
+    time.sleep(0.721534)
+    install_confirm = input("By applying this patch you are installing the Steam Deck UI. Are you sure you want to install this? Y/N? >> ")
 
-            print("Checking if the beta file exists: ", end = "")
-            if STEAM_BETA_PATH.exists():
-                print("File exists.")
-                print("Overwriting.")
-            else:
-                print("File doesn't exist")
-                print("The program will try to create it!")
+    if install_confirm.upper() != "Y":
+        terminate("Exiting.")
 
-            print("Killing Steam proccess.")
-            steamkill()
+    os.chdir(STEAM_PKG_PATH)
 
-            print("Applying steam patch.")
-            steam_patch()
-        else:
-            print("Exiting.")
+    print("Checking if the beta file exists: ", end = "")
+    if STEAM_BETA_PATH.exists():
+        print("File exists.")
+        print("Overwriting.")
     else:
-        print("Steam directory was not found. Exiting.")
-    exit()
+        print("File doesn't exist")
+        print("The program will try to create it!")
+
+    print("Killing Steam proccess.")
+    steamkill()
+
+    print("Applying steam patch.")
+    steam_patch()
 
 
 if __name__ == "__main__":
