@@ -46,6 +46,15 @@ With these installed let's go to the next step.
 8. Done!
 9. Run Steam with the Steam Deck UI patched!
 
+
+# Linux Gang Install Tutorial.
+1. Download the python file
+2. Install requirements.
+3. Do as your terminal says so.
+4. You should be done!
+5. Go to terminal and type steam -gamepadui
+6. Done
+
 # Uninstallation.
 1. Go to your Steam directory.
 2. Go to package folder.
