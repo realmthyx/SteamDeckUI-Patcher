@@ -1,5 +1,7 @@
 ![Results.](https://github.com/czarro1337/SteamDeckUI-Patcher/blob/main/obraz.png)
 # <center>SteamDeckUI-Patcher</center>
+<h1>UNSUPPORTED, USE BIG PICTURE MODE.</h1>
+
 Simple Python3 script that automates patching Steam for SteamDeck UI.
 
 This script will allow you to patch Steam, so it installs the SteamDeck UI.
